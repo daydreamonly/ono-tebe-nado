@@ -18,6 +18,10 @@
   list-style-type: circle;
 }
 
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
+
 .header__logo {
   display: block;
   width: 148px;
@@ -29,18 +33,18 @@
 }
 
 .address {
+  display: flex;
+  flex-direction: column;
   font-style: normal;
 }
 
 .header__address {
-  display: flex;
-  flex-direction: column;
   margin-left: 185px;
   line-height: 1.5;
 }
 
+
 .cover {
-  height: 757px;
   margin-bottom: 179px;
   color: #fff;
   background: url(../images/cover.jpg);
@@ -66,12 +70,10 @@
 }
 
 .aligned-text_center {
-  margin-right: 63px;
   text-align: center;
 }
 
 .aligned-text_right {
-  letter-spacing: 5px;
   text-align: right;
 }
 
@@ -86,6 +88,7 @@
 .cover__description {
   display: flex;
   align-items: center;
+  padding-bottom: 50px;
 }
 
 .cover__description-text {
@@ -120,7 +123,7 @@
 
 .lots__card-list {
   display: flex;
-  flex-grow: 1;
+  flex-wrap: wrap;
   gap: 25px;
   margin-bottom: 30px;
   list-style-type: none;
@@ -133,32 +136,28 @@
 
 .card {
   width: 334px;
-  height: 563px;
+  min-height: 563px;
   color: #fff;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
 }
 
 .card_type_film {
   background: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  
 }
 
 .card_type_book {
   background: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card__title {
+  width: 254px;
   font-weight: 700;
   font-size: 22px;
   text-decoration: underline;
@@ -166,6 +165,7 @@
 }
 
 .card__text {
+  width: 254px;
   font-weight: 400;
   font-size: 20px;
 }
@@ -175,7 +175,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 260px;
-  height: 100%;
+  min-height: 563px;
   margin: 0 auto;
   padding: 50px 0;
   color: #fff;
@@ -269,8 +269,7 @@
 }
 
 .footer__address {
-  display: flex;
-  flex-direction: column;
   margin-left: 50px;
   line-height: 1.4;
 }
+
