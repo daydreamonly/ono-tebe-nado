@@ -58,7 +58,7 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.cover__title{
+.cover__title {
   display: flex;
   flex-direction: column;
   margin: 0 50px 135px 50px;
